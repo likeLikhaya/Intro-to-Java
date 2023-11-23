@@ -1,0 +1,247 @@
+
+Day 1: Introduction to Java.
+Java Virtual Machine (JVM):
+Java Virtual Machine(JVM) - is a program that interprets Java bytecode to run as a program by providing a runtime environment that executes this process.
+Javac compiler - command reads source files that contain module, package and type declarations written in the Java programming language and compiles them into class files that run on the Java Virtual Machine.
+Bytecode - is a computer object code that an interpreter converts into binary machine code so it can be read by a computer's hardware processor.
+Java Development Kit (JDK):
+You need JDK installed on your computer in order create, compile, and run Java program(s)
+Java Runtime Environment (JRE):
+JRE allows you to run java programs, it includes JVM, browser plugins and applets support.
+Main Java features:
+Platform Independent:
+-	Java allows programmers to write their program on any machine with any configuration and to execute it on any other machine having different configurations.
+Object Oriented:
+-	Java is an OOP (object-oriented programming language) 
+Simple
+Robust Language
+Secure
+Multithreading
+Prerequisites:
+Computer
+Internet connection
+ 
+First program Explained.
+public class HelloWorld {-: 
+•	Every java application must have at least one class definition that consists of class keyword followed by classname. In this case classname is HelloWorld
+
+public static void main (String[]args) 
+•	{  this line is the main method. let’s break the second line of code in our program to 
+public :
+•	This makes the main method public that means that we can call the method from outside the class.
+
+static : 
+•	We do not need to create object for static methods to run. They can run itself.
+
+void :
+•	It does not return anything.
+
+main: 
+•	It is the method name. This is the entry point method from which the JVM can run your program.
+
+String [] args: 
+•	Used for command line arguments that are passed as strings.
+
+System.out println("Hello World"); -: 
+•	This method prints the contents inside the double quotes into the console and inserts a newline after
+ 
+Java Basic Fundamentals:
+What is a variable?
+-	A variable is a name given to a memory location. It is the basic unit of storage in a program.
+-	The value stored in a variable can be changed during program execution.
+-	A variable is only a name given to a memory location; all the operations done on the variable effects that memory location.
+-	In Java, all the variables must be declared before use.
+How to declare variables?
+Variables can be declared in java as follows:
+-	type: Type of data that can be stored in this variable.
+-	name: Name given to the variable.
+
+In this way, a name can only be given to a memory location. It can be assigned values in two ways:
+-	Variable Initialization
+-	Assigning value by taking input
+
+Declaring and initialize variables:
+-	datatype: Type of data that can be stored in this variable.
+-	variable_name: Name given to the variable.
+-	value: It is the initial value stored in the variable.
+
+Declaring variables examples
+-	float simpleInterest; - Declaring float variable.
+-	int myAge = 19; - Declaring and Initializing integer variable
+-	char firstLetter = 'h'; - Declaring and Initializing character variable
+
+Variable Types
+There are three types of variables in Java:
+
+1. Local Variables: A variable defined within a block or method, or constructor is called a local variable.
+-	These variables are created when the block is entered, or the function is called and destroyed after exiting from the block or when the call returns from the function.
+-	The scope of these variables exists only within the block in which the variable is declared. i.e., we can access these variables only within that block.
+Initialization of Local Variable is Mandatory.
+2. Instance Variables: Instance variables are non-static variables and are declared in a class outside any method, constructor, or block.
+-	As instance variables are declared in a class, these variables are created when an object of the class is created and destroyed when the object is destroyed.
+-	Unlike local variables, we may use access specifiers, for instance variables. If we do not specify any access specifier, then the default access specifier will be used.
+-	Initialization of Instance Variable is not Mandatory. Its default value is 0.
+Instance Variable can be accessed only by creating objects.
+3. Static Variables: Static variables are also known as Class variables.
+-	These variables are declared similarly as instance variables, the difference is that static variables are declared using the static keyword within a class outside any method constructor or block.
+-	Unlike instance variables, we can only have one copy of a static variable per class irrespective of how many objects we create.
+-	Static variables are created at the start of program execution and destroyed automatically when execution ends.
+-	Initialization of Static Variable is not Mandatory. Its default value is 0.
+-	If we access the static variable like Instance variable (through an object), the compiler will show the warning message and it won’t halt the program. The compiler will replace the object name with the class name automatically.
+-	If we access the static variable without the class name, Compiler will automatically append the class name.
+-	To access static variables, we need not create an object of that class, we can simply access the variable as
+ 
+Instance variable Vs Static variable
+-	Each object will have its own copy of instance variable whereas We can only have one copy of a static variable per class irrespective of how many objects we create.
+-	Changes made in an instance variable using one object will not be reflected in other objects as each object has its own copy of instance variable. In the case of static, changes will be reflected in other objects as static variables are common to all objects of a class.
+-	We can access instance variables through object references and Static Variables can be accessed directly using class name.
+
+All variables’ names should follow below general rules:
+-	Should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_).
+-	After the first character, variables can have any combination of characters.
+-	Key words cannot be used as an identifier.
+-	Most importantly, variables are case sensitive.
+-	Examples of legal variables: age, $salary, _value, __1_value.
+-	Examples of illegal variables: 123abc, -salary.
+
+-	Data type defines the values that a variable can take, for example if a variable has int data type, it can only take integer values. 
+-	Java is a statically typed language; the data type of a variable is known at compile time. 
+-	This means that you must specify the type of variable (Declare the variable) before you can use it. 
+ 
+In java we have two categories of data type:
+
+Primitive data types
+-	A primitive data type specifies the size and type of variable values, and it has no additional methods.
+
+Non-primitive data types 
+– Arrays and Strings are non-primitive data types
+
+Operators:
+-	An operator is a character that represents an action, for example - is an arithmetic operator that represents subtraction.
+Arithmetic Operators:
+-	are used in mathematical expressions in the same way that they are used in algebra.
+Relational Operators:
+
+Bitwise Operators:
+-	works on bits and performs bit-by-bit operation.
+Logical Operators:
+Assignment Operators:
+Misc Operators:
+
+ 
+Day 3 – Object-oriented programming concepts
+What is OOP?
+-	OOP (Object-oriented programming) is extended from procedural programming but taking a slightly different approach in writing computer programs.
+-	It involves:
+o	Creating a class (blueprint for objects)
+o	Creating objects (specific instances of those classes)
+o	Creating applications that manipulate/use those. 
+The 2 major types of applications:
+-	Computer simulations that mimic real-world activities so that users can better understand real-world processes operate.
+-	GUI  (Graphical User Interface) allows users to interact with a program in a graphical environment.
+OOP Core Features:
+-	Classes are a collection of objects with common properties.
+-	Class definition describes what attributes its object will have and what object will be able to do.
+-	Attributes are the characteristics that define an object; they are properties of the object.
+-	An object is a specific, concrete instance of a class.
+-	Creating an instance is instantiation.
+Encapsulation:
+-	Is the enclosure of data and methods within an object.
+-	It allows you to treat all an object’s methods and data as a single entity.
+-	It also refers to the concealment of objects data and methods from outside sources.
+-	Also allows you to hide specific object attributes and methods from outside sources and provides the security that keeps data and methods safe from changes.
+Inheritance:
+-	The ability to create classes that share the attributes and methods from an existing class but with more specific features.
+-	Extend is the keyword used to inherit the properties of a class.’
+ 
+Polymorphism:
+-	Means occurring in many forms.
+-	It allows objects of different types to be accessed through the same interface.
+-	While inheritance lets you inherit attributes and methods from another class, poly uses those methods to perform different tasks.
+Polymorphism can be implemented in 2 ways:
+-	Overloading means having multiple methods in a class with the same name with different parameters.
+-	Overriding happens when a method is a subclass has the same name & arguments a method in it superclass (parent)
+Coupling: 
+-	When one part of the program knows more about the other. 
+“Strong coupling”
+-	If they don’t need to know too much and can still work together its 
+“weak coupling”
+-	We use private, protected, and public to establish such connections.
+Cohesion:
+-	Is about how well a specific part of the program does its job.
+-	If a part of the program is doing very well and completely it has 
+“high cohesion”
+-	If its split into separate part and not done well by any part, its 
+“low cohesion.”
+Association:
+-	This is about the relationships between objects.
+-	One president for one country – one to one.
+-	One president has many ministers – one to many.
+-	Many ministers have many departments – many to many.
+
+Aggregation:
+-	Where one this is related to another (HAS-A)
+-	Like every passenger might have a car but not every car has a passenger.
+-	Its like a one-way relationship where one thing “has” another.
+Composition:
+-	Where two things are very much dependent on each other and can’t really exist alone.
+-	Like a car without an engine, they can’t work.
+-	Represents a part-of relationship between two classes.
+ 
+Day 4 – Decision control:
+If Statement:
+-	if statement consists of a Boolean expression followed by one or more statements
+-	If the Boolean expression evaluates to true, then the block of code inside the if statement (Statements) will be executed. 
+-	If the Boolean expression evaluates to false, then the block of code inside the if statement (Statements) will not be executed.
+IF ELSE statement:
+-	if statement can be followed by an optional else statement, which executes when the Boolean expression is false.
+Nested If Statement:
+-	Imagine having different boxes (or conditions) inside one big box (the main condition).
+-	Each smaller box checks something more specific inside the big box.
+-	If the big box is true, you open it and find smaller boxes inside. You check each smaller box one after another.
+
+-	It's like having a treasure chest (big box) and smaller compartments (smaller boxes) inside.
+-	When you open the big treasure chest (main condition), you might find more treasures (smaller conditions) inside.
+-	You go into each smaller compartment (nested condition) to find what you're looking for.
+-	If you find what you need in one compartment, you stop looking in the others.
+Switch Statement:
+-	Imagine you have different boxes labeled with numbers or names.
+-	You have a special machine that checks a box to see if it matches one of the labeled boxes.
+-	Each labeled box has something different inside.
+-	You use this special machine (switch statement) when you have many choices or options.
+-	The machine checks your box (a variable) to see if it matches any of the labeled boxes (cases).
+-	Each labeled box has something specific to do if it matches.
+General rules to a switch statement:
+-	You use this special machine (switch statement) when you have many choices or options.
+-	The machine checks your box (a variable) to see if it matches any of the labeled boxes (cases).
+-	Each labeled box has something specific to do if it matches.
+Ternary Operator Overview:
+-	Imagine you have only two choices, like yes or no, true or false, or on or off.
+-	You have a special shortcut that helps you decide between these two choices really quickly.
+Key Points:
+-	This shortcut works just like a quick IF-ELSE decision.
+-	It's a way to decide in a single line instead of using a full IF-ELSE statement.
+Syntax:
+-	It looks like this: (condition) ? result1 : result2.
+-	You have a condition in brackets first. Then, there are two things separated by a colon.
+-	If the condition is true, it picks the first thing. If false, it picks the second thing.
+Explanation:
+-	Let's say you want to decide what to do based on whether it's raining or not.
+-	If it's raining, you take an umbrella. If it's not raining, you don't take one.
+
+ 
+Day 5 – Java Modifiers:
+Java Identifiers
+-	Identifiers are the names of variables, methods, classes, packages and interfaces. 
+-	Unlike literals they are not the things themselves, just ways of referring to them. 
+-	In the HelloWorld program, HelloWorld,  args, main and println are identifiers.
+-	Identifiers must be composed of letters, numbers, the underscore _ and the dollar sign $. 
+-	Identifiers may only begin with a letter, the underscore or a dollar sign.
+-	Java uses CamelCase as a practice for writing names of Identifiers (methods, variables, classes, packages and constants)  
+-	Camel case consists of compound words or phrases such that each word or abbreviation begins with a capital letter or first word with a lowercase letter, rest all with capital.
+
+Java Modifiers:
+-	Modifiers are keywords that you add to those Identifiers to change their meanings. Java language has a wide variety of modifiers, including the following .
+-	Java Access Modifiers
+-	Non-Access Modifiers
+To use a modifier, you include its keyword in the definition of a class, method, or variable. The modifier precedes the rest of the statement, as in the following example, the words in bold blue are modifiers.
