@@ -1,0 +1,214 @@
+Day 1 – SDLC Overview and Introduction:
+-	Software Development Life Cycle (SDLC) is a process used by the software industry to design, develop and test high quality software.
+-	SDLC is a framework defining tasks performed at each step in the software development process.
+ How does the SDLC work?
+1.	Planning Phase
+-	Define the project's scope, goals, and feasibility.
+-	Gather information and create a project plan.
+
+2.	Analysis Phase
+-	Collect detailed requirements from stakeholders.
+-	Analyse user needs and system requirements.
+
+3.	Design Phase
+-	Create a blueprint for software architecture and design.
+-	Develop technical specifications and user interface design.
+
+4.	Implementation Phase
+-	Write the actual code based on designs and requirements.
+-	Build the software according to defined specifications.
+
+5.	Testing Phase
+-	Conduct various testing stages (unit, integration, system, acceptance).
+-	Identify and fix bugs, ensuring software quality.
+
+6.	Deployment Phase
+-	Install, configure, and release the software for use.
+
+7.	Maintenance Phase
+-	Fix bugs, make enhancements, and add new features.
+-	Ensure the software continues to function properly post-deployment.
+
+ 
+Day 2 – Popular SDLC models:
+-	The V-Model is an SDLC model where processes execute sequentially in a V-shape. 
+-	It's also known as the Verification and Validation model, an extension of the waterfall model. 
+-	Testing phases are directly associated with each development stage.
+Phases in the V-model:
+1.	Business Requirement Analysis:
+-	Understand product requirements from the customer’s perspective.
+-	Detailed communication with the customer to grasp expectations and precise needs.
+-	Input for acceptance testing and acceptance test design planning.
+
+2.	System Design:
+-	Designing the complete system based on clear and detailed requirements.
+-	Detailing hardware and communication setup.
+-	Development of the system test plan.
+
+3.	Architectural Design:
+-	Understand architectural specifications and propose technical approaches.
+-	Break down system design into modules (High-Level Design).
+-	Define data transfer and communication between modules and external systems.
+-	Design integration tests and documentation.
+
+4.	Module Design:
+-	Specify detailed internal designs for system modules (Low-Level Design).
+-	Ensure compatibility with other modules and external systems.
+-	Design unit tests to eliminate faults and errors at an early stage.
+
+What are the pro and cons of using V-Model?
+-	Simple and easy to use.
+-	Testing activities like planning, test designing happens well before coding. This saves a lot of time. Hence higher chance of success over the waterfall model.
+-	Proactive defect tracking – that is defects are found at early stage.
+-	Avoids the downward flow of the defects.
+-	Works well for small projects where requirements are easily understood.
+
+
+Spiral Model
+-	The Spiral Model is a risk-driven process combining elements of different models (e.g., waterfall, incremental). 
+-	It merges the best features of prototyping and the waterfall model. 
+-	This methodology emphasizes rapid prototyping and concurrent design and development activities.
+
+Phases in Spiral Model:
+1.	Identification:
+-	Starts with gathering business requirements in the initial spiral.
+-	Subsequent spirals mature the product by identifying system, subsystem, and unit requirements.
+-	Continuous communication between customer and system analyst.
+-	Deployment of the product in the identified market at spiral's end.
+
+2.	Design:
+-	Begins with conceptual design in the initial spiral.
+-	Includes architectural, logical, and physical product design in subsequent spirals.
+
+3.	Construct or Build:
+-	Produces the actual software product at each spiral.
+-	Develops a Proof of Concept (POC) in the baseline spiral for initial customer feedback.
+-	Produces working software builds in subsequent spirals, sent for customer evaluation.
+
+4.	Evaluation and Risk Analysis:
+-	Identifies, estimates, and monitors technical feasibility and management risks.
+-	Customer evaluates the software after testing the build, providing feedback at the end of the iteration.
+
+
+
+
+
+
+Big Bang Model
+-	The Big Bang Model focuses on software development and coding without extensive planning. 
+-	It is suited for small projects or teams where requirements may not be fully known or where the final release date is unspecified.
+
+Pros:
+-	Very simple and requires minimal planning.
+-	Easy to manage without formal procedures.
+-	Requires few resources and offers flexibility to developers.
+-	Suitable for repetitive or small projects with minimal risks.
+
+Cons:
+-	High risk and uncertainty.
+-	Not suitable for complex or object-oriented projects.
+-	Inadequate for long or ongoing projects.
+-	Can become costly if requirements are misunderstood.
+
+Waterfall Model
+-	The Waterfall Model divides software development into distinct phases where the output of each phase serves as input for the next. 
+-	It follows a predetermined path through phases like planning, design, implementation, testing, and deployment.
+
+Advantages:
+-	Simple, easy to understand, and manage.
+-	Phases are processed and completed one at a time.
+-	Well-suited for smaller projects with well-understood requirements.
+-	Clearly defined stages and milestones, easy to arrange tasks.
+
+Disadvantages:
+-	Lacks flexibility to accommodate changing requirements.
+-	Does not support feedback throughout the development process.
+-	Adaptation to changing requirements can be challenging.
+-	Not ideal for large or complex projects where requirements might evolve.
+
+
+Day 3 – SDLC Models:
+Agile Model
+- Agile methodology fosters continuous interaction between development and testing throughout the Software Development Life Cycle (SDLC). 
+- It divides projects into small incremental builds delivered in iterations, typically lasting one to three weeks. 
+- Agile emphasizes adaptability, teamwork, prototyping, and feedback loops.
+
+Evolution and Variants:
+    - Manifesto for Agile Software Development (2001): Contrasts Waterfall and Agile methods, emphasizing flexibility and adaptability.
+    - Variants: Scrum defines specific roles and ceremonies, while Kanban offers more flexibility and fewer prescriptions. Teams often combine these for a customized process.
+
+Popular Agile Methods:
+    - Rational Unified Process, Scrum, Crystal Clear, Extreme Programming, Adaptive Software Development, Feature Driven Development, Dynamic Systems Development Method (DSDM).
+
+Agile Manifesto Principles:
+    1. Individuals and interactions: Emphasis on self-organization, motivation, and teamwork.
+    2. Working software: Prioritizes functional software over extensive documentation for customer understanding.
+    3. Customer collaboration: Continuous customer interaction for evolving requirements.
+    4. Responding to change: Quick adaptation to changing requirements.
+ 
+
+Advantages of Agile:
+    - Realistic approach to development.
+    - Promotes teamwork and rapid functionality development.
+    - Requires minimum resources, suitable for changing requirements.
+    - Delivers early working solutions and adapts to changing environments.
+    - Allows concurrent development and delivery within a planned context.
+    - Offers flexibility, minimal rules, and easy management.
+
+Disadvantages of Agile:
+    - May struggle with complex dependencies.
+    - Higher risks concerning sustainability and maintainability.
+    - Requires an overall plan, agile leadership, and project management.
+    - Strict delivery management impacts scope and deadlines.
+    - Heavily depends on clear customer interaction, leading astray if requirements are unclear.
+    - Minimal documentation makes knowledge transfer challenging for new team members.
+ 
+Day 4 – What is Software Prototyping in SDLC?
+Steps in Designing a Software Prototype:
+1.	Basic Requirement Identification: 
+-	Understanding fundamental product requirements, especially concerning the user interface.
+
+2.	Developing the Initial Prototype: 
+-	Creating a basic prototype showcasing essential requirements and user interfaces, not necessarily reflecting the actual internal functioning.
+
+3.	Review of the Prototype: 
+-	Presenting the prototype to stakeholders, collecting feedback, and organizing it for further enhancements.
+
+4.	Revise and Enhance: 
+-	Incorporating feedback and review comments, negotiating changes with the customer based on time, budget, and technical feasibility, and repeating the cycle until meeting customer expectations.
+
+Types of Software Prototyping:
+1.	Throwaway/Rapid Prototyping: 
+-	Quick creation of a prototype with minimal requirement analysis, which is discarded once actual requirements are understood.
+
+2.	Evolutionary Prototyping: 
+-	Building functional prototypes that evolve based on well-understood requirements, adding new requirements as they are understood.
+
+3.	Incremental Prototyping: 
+-	Developing multiple functional prototypes of various subsystems and integrating them to form a complete system.
+
+4.	Extreme Prototyping: 
+-	Used in web development, emphasizing a fully functional UI development with less focus on actual services initially.
+Software Prototyping - Application:
+-	Prototyping is highly useful for systems involving high user interactions, such as online systems. 
+-	Systems with extensive data processing and minimal user interface might not benefit from prototyping.
+ 
+Best Practices of Prototyping:
+-	Use when requirements are unclear.
+-	Perform planned and controlled prototyping.
+-	Conduct regular meetings to avoid delays.
+-	Approve prototypes early before moving to the next step.
+-	Don't hesitate to change earlier decisions for new ideas.
+
+Advantages of the Prototyping Model:
+-	Early error detection and user involvement.
+-	Helps in risk reduction and effective communication.
+-	Provides customer satisfaction and quicker feedback.
+-	Helps identify missing functionality and complex functions.
+-	Encourages innovation and flexible designing.
+
+Disadvantages of the Prototyping Model:
+-	Slow and time-consuming process.
+-	Cost of developing a prototype may be wasted as it's ultimately discarded.
+-	May lead to excessive change requests and difficulty accommodating all client changes.
+-	Poor documentation due to changing customer requirements.
