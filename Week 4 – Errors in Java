@@ -1,0 +1,46 @@
+Day 1 - Compile Time/Syntax Errors:
+Compiler Role:
+-	Translates Java code (human-readable) into Java bytecode (computer-readable).
+-	Analogous to a translator converting languages.
+Error Cause:
+-	Compiler errors occur when the code breaks language rules (syntax).
+-	Equivalent to a translator unable to translate an unknown word.
+Nature of Errors:
+-	Commonly due to forgotten semicolons, misspelled variables, or rule violations (e.g., using a non-static variable in a static function).
+Example:
+-	Incomplete line causing a compile error (missing semicolon at the end).
+-	Understanding Java syntax is crucial to rectify such errors.
+Identification:
+-	Many Java Integrated Development Environments (IDEs) detect compile errors during coding.
+-	Helps in easily recognizing and rectifying errors as you write code.
+ 
+Runtime Errors:
+Runtime Error Definition:
+-	Occurs during program execution, disrupting the normal flow and leading to abnormal termination.
+-	Reasons include invalid user input, inaccessible files, lost network connections, or JVM memory exhaustion.
+Scenarios for Runtime Errors:
+-	Invalid user input, missing files, lost network connections, and resource failures can cause runtime errors.
+-	These errors stem from user, programmer, or physical resource issues.
+Detection of Runtime Errors:
+-	Not detected by the compiler; they occur during program execution.
+Example and Output Interpretation:
+-	Example error: java.lang.ArrayIndexOutOfBoundsException: 5.
+Interpretation:
+-	Type of error (ArrayIndexOutOfBoundsException).
+-	Information about the error (attempting to access the 5th index of an array).
+-	Stack trace specifying the class, function, and line number where the error occurred.
+Exception Handling:
+-	Aim: Prevent devastating effects of runtime errors and maintain the application's normal flow.
+-	Methods:
+Java try block:
+-	Encloses code that might throw an exception.
+-	Should be followed by catch or finally block.
+
+Java catch block:
+-	Handles exceptions by declaring the type of exception within the parameter.
+-	Multiple catch blocks can be used with a single try block.
+
+Java finally block:
+-	Executes important code (e.g., closing connections or streams).
+-	Always runs, whether an exception is handled or not.
+ 
