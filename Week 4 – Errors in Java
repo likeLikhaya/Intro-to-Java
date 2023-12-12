@@ -44,3 +44,59 @@ Java finally block:
 -	Executes important code (e.g., closing connections or streams).
 -	Always runs, whether an exception is handled or not.
  
+
+Day 2 – Logic Errors:
+Logic Errors:
+-	Logic errors occur when code compiles and runs without exceptions but fails to produce the expected output due to programmer assumptions, typos, or flawed logic.
+-	Identification is challenging during coding; testing by comparing expected versus actual results helps detect these errors.
+-	Logic errors might remain unnoticed, leading to flawed applications being deployed in production.
+-	Writing error-free code that compiles and runs doesn't guarantee the absence of logic errors; they are common occurrences in programming.
+Debugging:
+-	Debugging is a systematic process of finding and fixing bugs or defects in a computer program.
+-	Bugs arise when something assumed to be right turned out to be wrong, making the process challenging.
+-	Vital in identifying and resolving errors, fundamental in a programmer's daily work.
+-	Helps maintain the quality and functionality of software applications.
+Debugging Process:
+1.	Localizing a Bug:
+-	Identifying the bug's origin is crucial before attempting to fix it.
+-	Errors can be deceptive, making pinpointing them challenging.
+
+2.	Classifying the Error:
+-	Categorizing errors (compile, runtime, or logic) aids in effective solutions.
+-	Failure to classify correctly can hinder fixing the error.
+
+3.	Understanding an Error:
+-	Complete understanding of the error is necessary before fixing it.
+-	Avoids inadvertently causing more issues within the codebase.
+
+4.	Repairing an Error:
+-	Fixing the error involves more than code modification.
+-	Proper documentation of fixes is essential, aiding in future reference and learning.
+
+ 
+Debugging Techniques:
+
+1.	Exploiting Compiler Features:
+-	Utilizing the Java compiler's static analysis capabilities to detect syntax or semantic issues before execution.
+
+2.	The abused println() Debugging Technique:
+-	Involves inserting print statements to track code execution flow and data values during runtime.
+-	Considered ad-hoc, time-consuming, and not reusable.
+
+3.	Logging:
+-	Recording information messages or events to monitor program status and diagnose issues.
+-	Implemented through tools like log4j, offering various logging levels.
+
+4.	Defensive Programming and Assertions:
+-	Using assertions to validate code assumptions at specific points; helpful in identifying code problems.
+
+5.	ACI Debugging Technique:
+-	Explaining code to someone else to rethink assumptions and solve problems effectively.
+
+6.	Reading the Code Through:
+-	Reviewing code away from the terminal to understand its logic and identify issues.
+
+7.	The Debugger:
+-	An interactive tool allowing line-by-line code execution inspection, variable inspection, and breakpoints setting.
+-	Useful when other methods fail to identify problems, providing detailed control over code execution.
+ 
